@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container fluid>
+    <v-container padding fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" sm="8" md="4">
           <v-card class="elevation-12">
@@ -71,5 +71,11 @@ export default {
 }
 .home:hover {
   color: red;
+}
+.padding {
+  padding-top: 200px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
 }
 </style>

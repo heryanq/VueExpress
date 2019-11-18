@@ -1,10 +1,14 @@
 <template>
-  <panel title="Search">
-    <v-text-field
-      label="Search by song title, artist, album, or genre"
-      v-model="search"
-    ></v-text-field>
-  </panel>
+  <div>
+    <v-container fluid padding>
+      <panel title="Search">
+        <v-text-field
+          label="Search by song title, artist, album, or genre"
+          v-model="search"
+        ></v-text-field>
+      </panel>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -39,5 +43,16 @@ export default {
 </script>
 
 <style>
+
+.container.fluid {
+  max-width: 50%;
+}
+
+.padding {
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+}
 
 </style>

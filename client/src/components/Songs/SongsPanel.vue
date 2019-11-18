@@ -1,13 +1,13 @@
 <template>
   <div>
-    <v-container fluid>
+    <v-container padding fluid>
       <panel title="Songs">
         <v-btn
           slot="action"
           :to="{
             name: 'songs-create'
           }"
-          class="black accent-2"
+          class="accent-2"
           light
           medium
           absolute
@@ -99,5 +99,16 @@ export default {
 .album-image {
   width: 70%;
   margin: 0 auto;
+}
+
+.container.fluid {
+  max-width: 50%;
+}
+
+.padding {
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
 }
 </style>

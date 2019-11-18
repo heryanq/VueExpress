@@ -1,31 +1,26 @@
 <template>
   <div>
-    <v-layout>
-      <v-flex xs6>
-        <song-metadata :song="song" />
-      </v-flex>
+    <v-container padding fluid>
+      <v-layout>
+        <v-flex xs4>
+          <song-metadata :song="song" />
+        </v-flex>
+    
+        <v-flex xs4 class="ml-2">
+          <lyrics :song="song" />
+        </v-flex>
 
-      <v-flex xs6 class="ml-2">
-        <you-tube :youtubeId="song.youtubeId" />
-      </v-flex>
-    </v-layout>
-
-    <v-layout class="mt-2">
-      <v-flex xs6>
-        <tab :song="song" />
-      </v-flex>
-
-      <v-flex xs6 class="ml-2">
-        <lyrics :song="song" />
-      </v-flex>
-    </v-layout>
+        <v-flex xs4 class="ml-2">
+          <you-tube :youtubeId="song.youtubeId" />
+        </v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
 <script>
 import {mapState} from 'vuex'
 import Lyrics from './Lyrics'
-import Tab from './Tab'
 import SongMetadata from './SongMetadata'
 import YouTube from './YouTube'
 import SongsService from '@/services/SongsService'
@@ -57,11 +52,22 @@ export default {
   components: {
     SongMetadata,
     YouTube,
-    Lyrics,
-    Tab
+    Lyrics
   }
 }
 </script>
 
 <style scoped>
+
+.container.fluid {
+  max-width: 80%;
+}
+
+.padding {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
 </style>

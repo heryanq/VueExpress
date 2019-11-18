@@ -11,15 +11,6 @@
       </router-link>
     </v-toolbar-title>
 
-    <v-toolbar-items>
-      <v-btn 
-        v-text="'Search'" 
-        dark
-        :to="{
-          name: 'songs'
-        }"/>
-    </v-toolbar-items>
-
     <v-spacer></v-spacer>
 
     <v-toolbar-items>
