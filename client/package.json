@@ -1,8 +1,8 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "Cody Seibert <cseibert113@gmail.com>",
+  "description": "Project with Vue, Express and SQLite",
+  "author": "",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
