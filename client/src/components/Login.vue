@@ -16,17 +16,17 @@
             <v-card-text>
               <v-form>
                 <v-text-field
-                  label="Email"
-                  name="email"
                   prepend-icon="email"
-                  type="text"/>
-              
+                  label="Email"
+                  v-model="email"
+                ></v-text-field>
+                <br>
                 <v-text-field
-                  id="password"
-                  label="Password"
-                  name="password"
                   prepend-icon="lock"
-                  type="password"/>
+                  label="Password"
+                  type="password"
+                  v-model="password"
+                ></v-text-field>
                 <br>
                 <div class="danger-alert" v-html="error" />
                 <br>
