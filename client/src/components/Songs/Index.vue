@@ -1,18 +1,22 @@
 <template>
-  <v-layout>
-    <v-flex xs6 v-if="isUserLoggedIn">
-      <songs-bookmarks />
-      <recently-viewed-songs class="mt-2" />
-    </v-flex>
+  <div>
+    <v-container fluid>
+      <v-layout>
+        <v-flex xs4 v-if="isUserLoggedIn">
+          <songs-bookmarks />
+          <recently-viewed-songs class="mt-2" />
+        </v-flex>
 
-    <v-flex :class="{
-        xs12: !isUserLoggedIn,
-        xs6: isUserLoggedIn
-      }" class="ml-2">
-      <songs-search-panel />
-      <songs-panel class="mt-2" />
-    </v-flex>
-  </v-layout>
+        <v-flex :class="{
+            xs12: !isUserLoggedIn,
+            xs8: isUserLoggedIn
+          }" class="ml-2">
+          <songs-search-panel />
+          <songs-panel class="mt-2" />
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -68,6 +72,16 @@ export default {
 .album-image {
   width: 70%;
   margin: 0 auto;
+}
+
+.container.fluid {
+  max-width: 100%;
+}
+
+.padding {
+  padding-top: 75px;
+  padding-right: 0px;
+  padding-bottom: 0px;
 }
 
 </style>

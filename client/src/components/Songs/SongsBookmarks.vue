@@ -1,19 +1,23 @@
 <template>
-  <panel title="Bookmarks">
-    <v-data-table
-      :headers="headers"
-      :pagination.sync="pagination"
-      :items="bookmarks">
-      <template slot="items" scope="props">
-        <td class="text-xs-right">
-          {{props.item.title}}
-        </td>
-        <td class="text-xs-right">
-          {{props.item.artist}}
-        </td>
-      </template>
-    </v-data-table>
-  </panel>
+  <div>
+    <v-container fluid padding>
+      <panel title="Bookmarks">
+        <v-data-table
+          :headers="headers"
+          :pagination.sync="pagination"
+          :items="bookmarks">
+          <template slot="items" scope="props">
+            <td class="text-xs-right">
+              {{props.item.title}}
+            </td>
+            <td class="text-xs-right">
+              {{props.item.artist}}
+            </td>
+          </template>
+        </v-data-table>
+      </panel>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -55,5 +59,9 @@ export default {
 </script>
 
 <style>
+
+.padding {
+  padding-left: 100px;
+}
 
 </style>

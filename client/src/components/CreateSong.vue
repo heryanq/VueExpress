@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container padding>
+    <v-container fludi padding>
       <v-layout>
         <v-flex xs4>
           <panel title="Song Metadata">
@@ -49,8 +49,9 @@
         </v-flex>
 
         <v-flex xs5>
-          <panel title="Song Structure" class="ml-2">
+          <panel title="Song Structure" class="padding-lyrics ml-2">
             <v-text-field
+              rows="20"
               label="Lyrics"
               multi-line
               required
@@ -131,7 +132,8 @@ export default {
   padding-left: 350px;
 }
 
-.teste {
-  height: 800px;
+.padding-lyrics {
+  width: 100%;
+  height: 600px;
 }
 </style>

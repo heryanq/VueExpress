@@ -42,16 +42,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .container.fluid {
   max-width: 50%;
 }
 
 .padding {
-  padding-top: 100px;
-  padding-right: 50px;
-  padding-bottom: 0px;
   padding-left: 50px;
 }
 

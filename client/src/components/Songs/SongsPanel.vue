@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container padding fluid>
+    <v-container fluid padding>
       <panel title="Songs">
         <v-btn
           slot="action"
@@ -86,14 +86,17 @@ export default {
 
 .song-title {
   font-size: 30px;
+  color: red;
 }
 
 .song-artist {
   font-size: 24px;
+  color: black;
 }
 
 .song-genre {
   font-size: 18px;
+  color: black;
 }
 
 .album-image {
@@ -102,13 +105,10 @@ export default {
 }
 
 .container.fluid {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .padding {
-  padding-top: 100px;
-  padding-right: 50px;
-  padding-bottom: 0px;
   padding-left: 50px;
 }
 </style>

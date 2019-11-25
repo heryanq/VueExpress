@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container>
+    <v-container fluid padding>
       <v-layout>
         <v-flex xs4>
           <panel title="Song Metadata">
@@ -49,8 +49,9 @@
         </v-flex>
 
         <v-flex xs5>
-          <panel title="Song Structure" class="ml-2">
+          <panel title="Song Structure" class="padding-lyrics ml-2">
             <v-text-field
+              rows="20"
               label="Lyrics"
               multi-line
               required
@@ -133,7 +134,7 @@ export default {
 <style scoped>
 
 .container.fluid {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .padding {
@@ -141,6 +142,11 @@ export default {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 350px;
+}
+
+.padding-lyrics {
+  width: 100%;
+  height: 600px;
 }
 
 </style>

@@ -120,7 +120,7 @@ export default {
 
 .song-title {
   font-size: 24px;
-  color: brown
+  color: red
 }
 
 .song-artist {
